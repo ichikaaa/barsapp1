@@ -3,10 +3,7 @@
 const chalk = require('chalk')
 const app = require('./app')
 
-// import chalk from 'chalk';
-// import app from './app';
-
-const port = process.env.PORT;
+const port = process.env.PORT || "https://bars-330206.as.r.appspot.com/";
 //const port = 3000;
 const
     line = chalk.bold.black('-------------------------'),
