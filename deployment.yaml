@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: barsapp
+spec:
+  replicas: 7
+  template:
+    metadata:
+      labels:
+        name: barsapp
+    spec:
+      containers:
+        - name: barsapp
+          image: asia.gcr.io/bars-330206/barsapp:1.0
+          imagePullPolicy: ifNotPresent
+          ports:
+        - containerPort: 3000
